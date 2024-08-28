@@ -1,26 +1,23 @@
 
+letras=[]
 
-lista1=[]
-lista2=[]
+texto=input("ingresa algunos caracteres:").lower()
+
+texto =texto.lower()
+
+letras.append(input("ingresa tres letras:").lower())
+letras.append(input("ingresa segunda letras:").lower())
+letras.append(input("ingresa tercera letras:").lower())
 
 
-
-cosa=input("ingresa algunos caracteres:").lower()
-lista1.append(cosa)
-
-letras=input("ingresa tres letras:").lower()
-lista2.append(letras)
 
 #aqui me muestra los el numero de caracteres que tiene la palabra que se ingresa
-
-print("este es el largo de tu letras ingresadas ", len(cosa))
+print("Las palabras ingresadas en total son:", len(texto.split()))
 print("las palabras ingresadas en total son :",len(letras))
-#MUESTRA LAS LISTAS ACTULIZADAS
-print("esta es tu lista", lista1)
-print("esta es tu lista de letras ", lista2)
+
 
 #TEXO invertido
-print(f"tu texto invertido seria a si : {cosa[: : -1]}")
+print(f"tu texto invertido seria a si : {texto[: : -1]}")
 
 
 #Texto invertido de letras
@@ -28,14 +25,14 @@ print(f"tu texto invertido de letras seria : {letras[: : -1]}")
 
 #la palabra pyton se encuentra dentro del texto 
 
-print("python " in lista1)
+print("python " in texto)
 
 
 # la primera y ultima palabra 
 
-if cosa :
-    print(f"Primera letra de 'cosa': {cosa[0]}")
-    print(f"Última letra de 'cosa': {cosa[-1]}")
+if texto :
+    print(f"Primera letra de tu texto es : {texto[0]}")
+    print(f"Última letra de de tu texto es : {texto[-1]}")
 
 
 if letras:
