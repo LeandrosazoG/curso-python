@@ -47,3 +47,5 @@ elif not habla_ingles:
     
 elif not sabe_python:
     print("Para postularte, necesitas saber programar en Python")
+    
+    
