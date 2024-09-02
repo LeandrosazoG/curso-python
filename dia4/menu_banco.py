@@ -29,11 +29,12 @@ while True:
     elif opciones == 3: 
         saldo_retiro=int(input("ingresa cuando es el monto que deseas retirar :"))
         saldo_final= saldo-saldo_retiro
-        print(f"TU ESTADO DE CUENTA SON :{saldo_final}")
+        saldo-=saldo_retiro
+        print(f"TU ESTADO DE CUENTA SON :{saldo}")
         print("TU DINERO SERA RETIRADO EN BREVE")
         break
     elif opciones == 4:
-        print("tus pagos se recivieron correctamente ")
+        print("tus pagos se recibieron correctamente ")
         break
     elif opciones == 5:
         print ("tu comprobante sera imprimido en breve ")
